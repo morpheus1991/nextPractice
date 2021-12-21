@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [],
   addBase: {},
   purge: [
     // Use *.tsx if using TypeScript
