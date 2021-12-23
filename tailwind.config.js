@@ -10,9 +10,9 @@ module.exports = {
   addBase: {},
   purge: [
     // Use *.tsx if using TypeScript
-    "./pages/**/*.js",
-    "./pages/**/*.jsx",
-    "./components/**/*.js",
-    "./components/**/*.jsx",
+    "./pages/**/*.ts",
+    "./pages/**/*.tsx",
+    "./components/**/*.ts",
+    "./components/**/*.tsx",
   ],
 };

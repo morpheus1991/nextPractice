@@ -76,14 +76,8 @@ const Pactice = () => {
             상위1%딜러+고객불만족0건
           </h3>
           <div className="flex flex-col flex-wrap">
-            <img
-              className="w-full h-22"
-              src="/images/p1.png"
-              className="w-full h-22"
-            ></img>
-            <strong className="mt-2" className="flex justify-center">
-              #인증딜러차량
-            </strong>
+            <img className="w-full h-22" src="/images/p1.png"></img>
+            <strong className="flex justify-center">#인증딜러차량</strong>
             <p className="mt-1 justify-center">
               힘든 중고차 구매! 인증딜러와 상의하시면 거래의 편안함을 느끼실 수
               있습니다

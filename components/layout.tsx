@@ -5,7 +5,13 @@ import Link from "next/link";
 
 const name = "Aiden";
 export const siteTitle = "next.js sample website";
-const Layout = ({ children, home }) => {
+const Layout = ({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home: boolean;
+}) => {
   console.log(children);
 
   return (

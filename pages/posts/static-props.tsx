@@ -1,6 +1,9 @@
 import React from "react";
-
-const StaticProps = ({ posts }) => {
+type Post = { id: number; title: string; text: string };
+interface Props {
+  posts: Post[];
+}
+const StaticProps = ({ posts }: Props) => {
   return (
     <div>
       <ul>
@@ -17,7 +20,7 @@ const StaticProps = ({ posts }) => {
 
 export default StaticProps;
 
-export async function getStaticProps(context) {
+export async function getStaticProps(context: any) {
   let posts = await new Promise((resolve, reject) => {
     resolve([
       { id: 1, title: "타이틀", text: "ddd" },
