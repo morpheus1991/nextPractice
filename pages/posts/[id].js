@@ -15,7 +15,6 @@ export default function Post({ postData }) {
     fetch("http://localhost:3000/api/randomNumbers", requestOptions)
       .then((response) => response.json())
       .then((result) => setNumbers(result.numbers.join(", ")))
-      // .then((result) => setNumbers(result.numbers.splice("")))
       .catch((error) => console.log("error", error));
   };
   return (
@@ -23,14 +22,15 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      {postData.title}
-      <br />
-      <Date dateString={postData.date}></Date>
-      {postData.id}
-      <br />
-      {postData.date}
-      {numbers && <div>{numbers}</div>}
-      <button onClick={getNumbers}>숫자 받아오기</button>
+      <div className="text-white">
+        <div className=" text-3xl">{postData.title}</div>
+        <br />
+        <Date dateString={postData.date}></Date>
+        {postData.id}
+        <br />
+        {numbers && <div>{numbers}</div>}
+        <button onClick={getNumbers}>숫자 받아오기</button>
+      </div>
     </Layout>
   );
 }
