@@ -10,7 +10,7 @@ const Layout = ({ children, home }) => {
 
   return (
     <div className="sw-full group  mx-auto  w-1/2 ">
-      <div className="relative py-20 mt-20 w-full px-10 group-hover:bg-slate-800 group-hover:w-1/2 group-hover:opacity-100 mx-auto transition-all transition-duration: 1000ms ease-in-out opacity-0 rounded-lg shadow-slate-800 shadow-lg h-[40rem]">
+      <div className="relative py-20 mt-20 w-full px-10 bg-slate-800  group-hover:opacity-100 mx-auto transition-all transition-duration: 1000ms ease-in-out rounded-lg shadow-slate-800 shadow-lg h-[40rem]">
         <Head>
           <meta
             name="description"
